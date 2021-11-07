@@ -1,5 +1,5 @@
-/** La palabra clave this hace referencia a cosas distintas según el context
- * Dentro de un objeto, va hacer referencia al objeto en si mimo.
+/** La palabra clave "this" hace referencia a cosas distintas según el context
+ * Dentro de un objeto, va hacer referencia al objeto en si mismo.
  * Fuera de un objeto, va hacer referencia al objeto window del browser
  ***/
 const estudiante = {
@@ -10,12 +10,16 @@ const estudiante = {
 };
 
 //En este escenario this hace referencia al objeto que lo contiene
-//  estudiante.estudiar();
+estudiante.estudiar();
 
 
 //This -> hace referencia al objeto window del browser
 const estudiar = estudiante.estudiar;
-// estudiar();
+estudiar();
+
+//Bind sets the "this" value for the given object
+const estudiar2 = estudiante.estudiar.bind(estudiante);
+estudiar2();
 
 // En este ejemplo vamos a ver que sucede con this. El THIS 
 // se restablece por considerarse la llamada al setTimeout una 
@@ -71,4 +75,4 @@ const fabrica = {
 };
 
 // fabrica.mostrar();
-fabrica.mostrarFlecha();
+// fabrica.mostrarFlecha();

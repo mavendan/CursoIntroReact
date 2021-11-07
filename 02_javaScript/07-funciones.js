@@ -18,3 +18,28 @@ function hola(nombre = 'Mundo'){
 const saludar = (nombre) => console.log('Hola ', nombre);
 
 // saludar('Aaron');
+
+/**HOISTING: JAVASCRIPT MUEVE AUTOMATICAMENTE LA DECLARACION DE LAS FUNCIONES AL INICIO */
+
+//Function declaration
+// Funciona por el HOISTING
+hablar();
+
+function hablar(){
+    console.log('Hablando');
+}
+
+//Function expression
+
+// Va fallar porque se llama antes de declarar
+gritar();
+
+const gritar = function() {
+    console.log('Gritar!!');
+}
+
+
+// reir();
+const reir = () =>{
+    console.log('Reir');
+}

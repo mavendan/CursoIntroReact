@@ -14,4 +14,30 @@ console.log({cuadrado});
 
 const alCuadrado = numeros.map(numero => numero * numero);
 
-console.log({alCuadrado});
+// console.log({alCuadrado});
+
+//Agregando elementos en un arreglo
+//End
+frutas.push('Papaya');
+console.log('push', frutas);
+
+//Begining
+frutas.unshift('Sandia');
+console.log('unshift', frutas);
+
+//Middle
+frutas.splice(2, 0, 'Kiwi');
+console.log('splice', frutas);
+
+/** BORRANDO ELEMENTOS DE UN ARREGLO */
+//End
+frutas.pop();
+console.log('pop', frutas);
+
+//Begining
+frutas.shift();
+console.log('shift', frutas);
+
+//Middle
+frutas.splice(1, 1,);
+console.log('splice', frutas);

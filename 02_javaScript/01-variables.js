@@ -1,3 +1,9 @@
+//'use strict' fue introducido en  ECMAScript 5
+//Le dice al browser que use el JavaScript moderno
+/* To keep the old code working, most such modifications are off by default. 
+  You need to explicitly enable them with a special directive: "use strict". */
+
+
 // Definición de variables: var, let, const
 // var: scope de función
 // const: scope del bloque donde se define
